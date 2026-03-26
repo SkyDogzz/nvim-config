@@ -18,6 +18,9 @@ require("lazy").setup({
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    -- import LazyVim extras
+    { import = "lazyvim.plugins.extras.lang.rust" },
+    -- C# is configured in lua/plugins/csharp.lua to avoid double LSPs
     -- import/override with your plugins
     { import = "plugins" },
   },
